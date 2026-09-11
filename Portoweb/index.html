@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vico · Pentester Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;900&family=Share+Tech+Mono&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- MATRIX RAIN CANVAS -->
+<canvas id="matrixCanvas"></canvas>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container nav-container">
+    <div class="logo"><span>✦</span> VICO</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#edu">Edu</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#organization">Organization</a>
+      <a href="#awards">Awards</a>
+      <a href="#cv">CV</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="container home-grid">
+    <div class="home-content">
+      <h1><span id="typewriter"></span></h1>
+      <div class="about-text">
+        <p>I am a Computer Science student at Dian Nuswantoro University, specializing in Computer Security and Data Protection. I have a strong passion for identifying and mitigating security vulnerabilities, which I actively pursue as a Security Researcher on platforms like HackerOne, Bugcrowd, and Cyber Army Indonesia. With hands-on experience in digital forensics and penetration testing, I am proficient in utilizing tools such as Burp Suite, Nuclei, Autopsy, etc. I am driven by the challenge of fortifying digital infrastructures and am constantly evolving my technical skills to stay ahead of the ever-changing cybersecurity landscape.</p>
+      </div>
+      <div class="btn-group">
+        <a href="#experience" class="btn">EXPERIENCE</a>
+        <a href="#cv" class="btn btn-outline">CV</a>
+      </div>
+    </div>
+    <div class="photo-3d-wrapper">
+      <div class="photo-card badge-style" id="card3d">
+        <div class="photo-inner">
+          <!-- Holographic Sheen Layer -->
+          <div class="badge-holo"></div>
+
+          <!-- Top Lanyard / Clip Hole -->
+          <div class="badge-clip-slot">
+            <div class="slot-hole"></div>
+          </div>
+
+          <!-- Official Pass Header -->
+          <div class="badge-header">
+            <div class="badge-authority">
+              <span class="auth-icon">◈</span>
+              <span class="auth-title">ID CARD</span>
+            </div>
+            <span class="badge-clearance">SARJANA KOMPUTER</span>
+          </div>
+
+          <!-- Centered Portrait Photo Section -->
+          <div class="badge-portrait-wrap">
+            <div class="portrait-box">
+              <img src="img/foto.png" alt="foto Vico" class="avatar-img">
+              <div class="badge-stamp"><i class="fas fa-shield-alt"></i> VERIFIED OPERATIVE</div>
+            </div>
+          </div>
+
+          <!-- Personnel Info -->
+          <div class="badge-profile">
+            <div class="photo-name">VICOLA NANDA P.</div>
+            <div class="badge-role-tag">PENETRATION TESTER</div>
+          </div>
+
+          <!-- Smartchip & Credentials Row -->
+          <div class="badge-tech-row">
+            <div class="chip-circuit">
+              <div class="chip-pin pin-1"></div>
+              <div class="chip-pin pin-2"></div>
+              <div class="chip-pin pin-3"></div>
+            </div>
+            <div class="rfid-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <div class="badge-cred-grid">
+              <div class="cred-box">
+                <span class="lbl">DIVISION</span>
+                <span class="val">OFFENSIVE SECURITY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Barcode Footer -->
+          <div class="badge-footer">
+            <div class="badge-barcode"></div>
+            <div class="badge-hash">HASH // SHA-256</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="edu">
+  <div class="container">
+    <h2 class="section-title"> My Education</h2>
+    <div class="card-grid horizontal-grid">
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/smanda.jpg" alt="SMANDA" class="custom-icon">
+        </div>
+        <h3>SMA Negeri 2 Semarang</h3>
+        <div class="meta">EC-Council · 2023</div>
+        <p>Sertifikasi ethical hacking, penetration testing, dan exploit development.</p>
+      </div>
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/udinus.jpeg" alt="Dian Nuswantoro University" class="custom-icon">
+        </div>
+        <h3>Dian Nuswantoro University</h3>
+        <div class="meta">S1 informatics engineering · 2022 – 2026</div>
+        <p>Fokus keamanan komputer, kriptografi, dan perlindungan data.</p>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title"> My Experience</h2>
+    <div class="card-grid horizontal-grid">
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/krimsus.jpeg" alt="krimsus" class="custom-icon">
+        </div>
+        <h3>Internship</h3>
+        <div class="meta">Ditreskrimsus Polda Jateng · 2025</div>
+        <p>During my internship at Ditreskrimsus, I specialized in the Cyber Security division with a focus on Digital Forensics. I was responsible for handling digital evidence through rigorous forensic methodologies.</p>
+      </div>
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/bugcrowd.png" alt="BugCrowd" class="custom-icon">
+        </div>
+        <h3>Bug Bounty Hunter</h3>
+        <div class="meta">BugCrowd · 2025 – Now</div>
+        <p>Operating as an independent Security Researcher on Bugcrowd, I perform targeted security testing and vulnerability research across diverse private and public programs.</p>
+      </div>
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/hackerone.png" alt="HackerOne" class="custom-icon">
+        </div>
+        <h3>Bug Bounty Hunter</h3>
+        <div class="meta">HackerOne · 2025 – Now</div>
+        <p>As a self-driven Security Researcher on the HackerOne platform, I conduct comprehensive vulnerability assessments and penetration testing for various global organizations.</p>
+      </div>
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/cyberarmy.jpeg" alt="CyberArmy" class="custom-icon">
+        </div>
+        <h3>Bug Bounty Hunter</h3>
+        <div class="meta">CyberArmy · 2026 – Now</div>
+        <p>As a Security Researcher within the Cyber Army Indonesia ecosystem, I contribute to strengthening the national cybersecurity posture by identifying and reporting vulnerabilities in various Indonesian digital infrastructures.</p>
+      </div>
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/DAU.jpg" alt="DAU" class="custom-icon">
+        </div>
+        <h3>Penetration Tester</h3>
+        <div class="meta">PT. Data Andalan Utama · 2026 – Now</div>
+        <p>As a Cybersecurity at PT Data Andalan Utama, I contribute to identifying and assessing security vulnerabilities across web applications and APIs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title"> My Skills</h2>
+    <div class="card-grid horizontal-grid">
+
+      <!-- TOOLS -->
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <i class="fas fa-terminal"></i>
+        </div>
+        <h3>Tools</h3>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>BurpSuite</span><span>9/10</span></div><div class="skill-bar"><div class="fill" style="width:90%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Nmap</span><span>8/10</span></div><div class="skill-bar"><div class="fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Nuclei</span><span>9/10</span></div><div class="skill-bar"><div class="fill" style="width:90%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Subfinder</span><span>8/10</span></div><div class="skill-bar"><div class="fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>etc.</span><span>—</span></div><div class="skill-bar"><div class="fill" style="width:70%"></div></div></div>
+      </div>
+
+      <!-- SCRIPTING -->
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Scripting</h3>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Python</span><span>8/10</span></div><div class="skill-bar"><div class="fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Bash</span><span>8/10</span></div><div class="skill-bar"><div class="fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>etc.</span><span>—</span></div><div class="skill-bar"><div class="fill" style="width:70%"></div></div></div>
+      </div>
+
+      <!-- OS -->
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <h3>Operating System</h3>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Windows</span><span>8/10</span></div><div class="skill-bar"><div class="fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>Linux</span><span>8/10</span></div><div class="skill-bar"><div class="fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-label"><span>etc.</span><span>—</span></div><div class="skill-bar"><div class="fill" style="width:70%"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ORGANIZATION -->
+<section id="organization">
+  <div class="container">
+    <h2 class="section-title"> My Organization</h2>
+    <div class="org-grid">
+      <div class="card-item">
+        <div class="icon-wrapper">
+          <img src="img/scs.jpeg" alt="Semarang Cyber Security" class="custom-icon">
+        </div>
+        <h3>Semarang Cyber Security</h3>
+        <div class="meta">Member · 2025 – Now</div>
+        <p>Komunitas cybersecurity di Semarang yang berfokus pada sharing knowledge, CTF, dan kolaborasi security research.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="container">
+    <h2 class="section-title"> Certificates</h2>
+    <div class="card-grid horizontal-grid" id="sertifikat-grid">
+      <div class="card-item sertifikat-card">
+        <div class="icon-wrapper">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Basic Training For Next Generation</h3>
+        <p>DNCC · 2021</p>
+        <div class="sertifikat-preview">
+          <img src="img/sertif/DNCC.jpeg" alt="Basic Training" class="sertif-thumb" onerror="this.src='https://placehold.co/600x400/030608/00ff66?text=Basic+Training+Sertifikat'">
+        </div>
+        <button class="btn-sertifikat" data-img="img/sertif/DNCC.jpeg">Open</button>
+      </div>
+      <div class="card-item sertifikat-card">
+        <div class="icon-wrapper">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>CYBERXPLORING</h3>
+        <p>Cyronethic · 2025</p>
+        <div class="sertifikat-preview">
+          <img src="img/sertif/Cyronethic.jpeg" alt="CYBERXPLORING" class="sertif-thumb" onerror="this.src='https://placehold.co/600x400/030608/00ff66?text=CYBERXPLORING+Sertifikat'">
+        </div>
+        <button class="btn-sertifikat" data-img="img/sertif/Cyronethic.jpeg">Open</button>
+      </div>
+      <div class="card-item sertifikat-card">
+        <div class="icon-wrapper">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>BUG BOUNTY FUN & PROFIT</h3>
+        <p>Merdeka Siber · 2025</p>
+        <div class="sertifikat-preview">
+          <img src="img/sertif/Merdeka Siber.jpeg" alt="BUG BOUNTY FUN & PROFIT" class="sertif-thumb" onerror="this.src='https://placehold.co/600x400/030608/00ff66?text=BUG+BOUNTY+FUN+%26+PROFIT+Sertifikat'">
+        </div>
+        <button class="btn-sertifikat" data-img="img/sertif/Merdeka Siber.jpeg">Open</button>
+      </div>
+      <div class="card-item sertifikat-card">
+        <div class="icon-wrapper">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Certificate of Appreciation</h3>
+        <p>BMKG · 2026</p>
+        <div class="sertifikat-preview">
+          <img src="img/sertif/BMKG1.png" alt="Certificate of Appreciation" class="sertif-thumb" onerror="this.src='https://placehold.co/600x400/030608/00ff66?text=Certificate+of+Appreciation+Sertifikat'">
+        </div>
+        <button class="btn-sertifikat" data-img="img/sertif/BMKG1.png">Open</button>
+      </div>
+      <div class="card-item sertifikat-card">
+        <div class="icon-wrapper">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>2nd Certificate of Appreciation</h3>
+        <p>BMKG · 2026</p>
+        <div class="sertifikat-preview">
+          <img src="img/sertif/BMKG2.png" alt="Certificate of Appreciation" class="sertif-thumb" onerror="this.src='https://placehold.co/600x400/030608/00ff66?text=Certificate+of+Appreciation+Sertifikat'">
+        </div>
+        <button class="btn-sertifikat" data-img="/img/sertif/BMKG2.png">Open</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV -->
+<section id="cv">
+  <div class="container" style="text-align: center;">
+    <h2 class="section-title">CV & Contact</h2>
+
+    <p style="max-width: 500px; margin: 0 auto 2rem; color: #94a3b8;">
+      Contact me to discuss security collaboration.
+    </p>
+
+    <div style="display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;">
+      <a href="#" class="btn" id="cv-btn">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+
+      <a href="#" class="btn btn-outline" id="email-btn">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/vicola-nanda-pratama-2a07372/"
+        class="btn btn-outline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COMING SOON POPUP -->
+<div id="coming-popup" class="coming-popup">
+  <div class="coming-popup-content">
+    <button class="close-popup" id="close-popup">&times;</button>
+
+    <div class="popup-icon">
+      <img src="img/kucing.png" alt="Kucing">
+    </div>
+
+    <h3>Nanti dulu kak hehe...</h3>
+    <p>Fitur ini belum tersedia untuk saat ini.</p>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" src="" alt="sertifikat">
+</div>
+
+<footer>
+  <p>© 2026 Vico · <i class="fas fa-terminal"></i> pentester & security researcher</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
